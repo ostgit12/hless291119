@@ -7,14 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-
 <header>
-    <h1>Return to previous page</h1>
     <nav>
+    Return to previous page
         <a href="index.html">Index</a>
     </nav>
-
-    <h2>This page contain a list of surveys</h2>
 </header>
 
 <form method="POST" action="https://formspree.io/xrgbpzdw">
@@ -28,14 +25,15 @@
     <br>
     <label> 
         <input type="radio" name="Ferrari">Ferrari
-    </label><br>
+    </label>
+    <br>
     <label>
         <input type="radio" name="Fiat">Fiat
     </label>
 </section>
 
 <section>
-    <h3>Survey #2 "What pet you want to have?"</h3>
+    <h3>Survey #2 "What animal do you like?"</h3>
     
     <label>
         <input type="radio" name="Dog">Dog
@@ -67,8 +65,10 @@
 </section>
 
 <section>
-    <h3>Thank you for your answers</h3>
-    
+    <br>
+    <fieldset style="width: 450px">
+    <legend>Send your answers to email</legend>
+    <br>
     <label>Name:
         <input type="text" placeholder="Name" name="name" required>
     </label>
@@ -77,15 +77,17 @@
         <input type="mail" placeholder="Email" name="email" required>
     </label>
     <br>
-    <label>Comments:<textarea>
+    <label>Comments:<textarea style="width: 235px">
 
     </textarea>
     </label>
     <br>
-    <label>
-        <input type="submit">
+    <label><center>
+        <input type="submit" value="Send data" style="align: left">
     </label>
+    </fieldset>
 </section>
+
 </form>
 </body>
 </html>
